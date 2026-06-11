@@ -1,11 +1,11 @@
 <?php
 
-require_once "./functions.php"
+require_once "./server.php";
 
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -15,30 +15,47 @@ require_once "./functions.php"
 </head>
 
 <body>
-    <h1>Music Records</h1>
+    <div class="container py-5">
 
-    <?php
-    foreach ($musicRecords as $disco) { ?>
-        <ul>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <?php foreach ($musicRecords as $disco) { ?>
+                <div class="col">
+                    <div class="card h-100 text-center">
 
-            <?php foreach ($disco as $value) { ?>
+                        <img src="<?php echo $disco["cover"] ?>" class="card-img-top" alt="<?php echo $disco["titolo"] ?>">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $disco["titolo"] ?></h5>
+                            <p class="card-text text-secondary"><?php echo $disco["artista"] ?></p>
+                            <p class="card-text fw-bold"><?php echo $disco["anno"] ?></p>
+                        </div>
 
-                <li><?php echo $value ?> </li>
-
+                    </div>
+                </div>
             <?php } ?>
-
-        </ul>
-    <?php } ?>
-
-    <form action="server.php" method="POST">
-        <div class="form-control">
-            <input type="text" name="record-name" id="record-name">
-            <button class="btn btn-secondary">Add</button>
         </div>
 
-    </form>
+        <form method="POST" class="row g-2 mt-5">
+            <div class="col">
+                <input type="text" name="titolo" class="form-control" placeholder="Titolo">
+            </div>
+            <div class="col">
+                <input type="text" name="artista" class="form-control" placeholder="Artista">
+            </div>
+            <div class="col">
+                <input type="text" name="cover" class="form-control" placeholder="Cover (url)">
+            </div>
+            <div class="col">
+                <input type="number" name="anno" class="form-control" placeholder="Anno">
+            </div>
+            <div class="col">
+                <input type="text" name="genere" class="form-control" placeholder="Genere">
+            </div>
+            <div class="col-auto">
+                <button class="btn btn-primary">Add</button>
+            </div>
+        </form>
 
-
+    </div>
 </body>
 
 </html>

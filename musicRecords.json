@@ -2,35 +2,35 @@
   {
     "titolo": "The Dark Side of the Moon",
     "artista": "Pink Floyd",
-    "cover": "https://placehold.co/300x300?text=Dark+Side",
+    "cover": "https:\/\/placehold.co\/300x300?text=Dark+Side",
     "anno": 1973,
     "genere": "Progressive Rock"
   },
   {
     "titolo": "Thriller",
     "artista": "Michael Jackson",
-    "cover": "https://placehold.co/300x300?text=Thriller",
+    "cover": "https:\/\/placehold.co\/300x300?text=Thriller",
     "anno": 1982,
     "genere": "Pop"
   },
   {
     "titolo": "Nevermind",
     "artista": "Nirvana",
-    "cover": "https://placehold.co/300x300?text=Nevermind",
+    "cover": "https:\/\/placehold.co\/300x300?text=Nevermind",
     "anno": 1991,
     "genere": "Grunge"
   },
   {
     "titolo": "Random Access Memories",
     "artista": "Daft Punk",
-    "cover": "https://placehold.co/300x300?text=RAM",
+    "cover": "https:\/\/placehold.co\/300x300?text=RAM",
     "anno": 2013,
     "genere": "Electronic"
   },
   {
     "titolo": "Abbey Road",
     "artista": "The Beatles",
-    "cover": "https://placehold.co/300x300?text=Abbey+Road",
+    "cover": "https:\/\/placehold.co\/300x300?text=Abbey+Road",
     "anno": 1969,
     "genere": "Rock"
   }
