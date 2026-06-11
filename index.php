@@ -30,6 +30,14 @@ require_once "./functions.php"
         </ul>
     <?php } ?>
 
+    <form action="server.php" method="POST">
+        <div class="form-control">
+            <input type="text" name="record-name" id="record-name">
+            <button class="btn btn-secondary">Add</button>
+        </div>
+
+    </form>
+
 
 </body>
 
